@@ -120,7 +120,29 @@ public class Menu {
         result = Menu.menuValidIntegerCheckerWithDefault(-100, null, prompt, errorMessage, 100);
         printResult(result);
 
-        result = Menu.menuValidIntegerCheckerWithDefault(-100, 0, prompt, errorMessage, 100);
+        result = Menu.menuValidIntegerCheckerWithDefault(-100, 0, prompt, errorMessage, -100);
+        printResult(result);
+
+        result = Menu.menuValidIntegerCheckerWithDefault(null, null, prompt, errorMessage, -100);
+        printResult(result);
+
+
+        result = Menu.menuValidIntegerCheckerWithDefault(null, 100, prompt, errorMessage, -100);
+        printResult(result);
+
+        result = Menu.menuValidIntegerCheckerWithDefault(0, null, prompt, errorMessage, -100);
+        printResult(result);
+
+        result = Menu.menuValidIntegerCheckerWithDefault(0, 100, prompt, errorMessage, -100);
+        printResult(result);
+
+        result = Menu.menuValidIntegerCheckerWithDefault(-100, 100, prompt, errorMessage, -100);
+        printResult(result);
+
+        result = Menu.menuValidIntegerCheckerWithDefault(-100, null, prompt, errorMessage, -100);
+        printResult(result);
+
+        result = Menu.menuValidIntegerCheckerWithDefault(-100, 0, prompt, errorMessage, -100);
         printResult(result);
     }
 }
