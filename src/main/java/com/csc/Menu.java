@@ -75,7 +75,6 @@ public class Menu {
         }
     }
 
-
     public static void main(String[] args) {
         String prompt = "Please enter a value ";
         String errorMessage = "Your value is invalid.";
@@ -103,7 +102,6 @@ public class Menu {
 
         result = Menu.menuValidIntegerCheckerWithDefault(null, null, prompt, errorMessage, 100);
         printResult(result);
-
 
         result = Menu.menuValidIntegerCheckerWithDefault(null, 100, prompt, errorMessage, 100);
         printResult(result);
